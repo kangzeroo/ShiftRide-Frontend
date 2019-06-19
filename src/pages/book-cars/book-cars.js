@@ -15,11 +15,12 @@ import { gql } from "apollo-boost";
 
 export default ({}) => {
   const componentName = "Book Cars";
-  const query = gql``;
-
-  return (
-    <Query query={query}>
-      <div id={componentName}>Book Cars</div>
-    </Query>
-  );
+  // const query = gql``;
+  //
+  // return (
+  //   <Query query={query}>
+  //     <div id={componentName}>Book Cars</div>
+  //   </Query>
+  // );
+  return <p>{componentName}</p>;
 };

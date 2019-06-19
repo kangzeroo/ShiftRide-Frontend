@@ -16,28 +16,29 @@ import { gql } from "apollo-boost";
 export default ({}) => {
   const componentName = "HomePage";
   // core assumption is that when we query vehicles, we are getting only active and verified listings
-  const query = gql`
-    query {
-      vehicles(
-        lat: 43.473801
-        lng: -80.531739
-        startDate: "2019-06-02T08:34:50+0000"
-        endDate: "2019-06-02T08:34:50+0000"
-      ) {
-        _id
-        make
-        model
-        location
-        owner {
-          aliasName
-        }
-      }
-    }
-  `;
-
-  return (
-    <Query query={query}>
-      <div id={componentName}>Home Page</div>
-    </Query>
-  );
+  // const query = gql`
+  //   query {
+  //     vehicles(
+  //       lat: 43.473801
+  //       lng: -80.531739
+  //       startDate: "2019-06-02T08:34:50+0000"
+  //       endDate: "2019-06-02T08:34:50+0000"
+  //     ) {
+  //       _id
+  //       make
+  //       model
+  //       location
+  //       owner {
+  //         aliasName
+  //       }
+  //     }
+  //   }
+  // `;
+  //
+  // return (
+  //   <Query query={query}>
+  //     <div id={componentName}>Home Page</div>
+  //   </Query>
+  // );
+  return <p>{componentName}</p>;
 };
